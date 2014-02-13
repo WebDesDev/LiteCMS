@@ -11,14 +11,16 @@
 <!DOCTYPE html>
 <html lang="pl_PL">
 	<head>
-		<title>Content Management System</title>
+		<title>Lite Content Management System</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<meta name="author" content="" />
 	</head>
 	<body>
 		<p>
-			Content Management System
+			Lite Content Management System
 		</p>
 	</body>
 </html>
