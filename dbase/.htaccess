@@ -1,14 +1,24 @@
+###
+# @project LiteCMS
+# @author	Damian Miller
+# @company WebDes Studio 2014 ©
+# @website http://webdes.com.pl/product,lite-cms
+# --------------------------------------------------
+# All rights reserved! | Wszystkie Prawa Zastrzeżone!
+###
 <Files .*>
 	Order Deny,Allow
 	Deny From All
 </Files>
 <IfModule mod_rewrite.c>
-	### ModRewrite ###
+	### ModRewrite
 	RewriteEngine on
 	RewriteBase /
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^([A-Za-z0-9-]+)$ index.php?file=$1&%{QUERY_STRING}
+	RewriteRule ^([A-Za-z0-9-]+)$ index.php?get=$1&%{QUERY_STRING}
+	
+	### Block robots
 	RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR]
 	RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR]
 	RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw [OR]
