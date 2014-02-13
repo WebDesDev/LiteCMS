@@ -1,4 +1,0 @@
-LiteCMS
-=======
-
-LiteCMS
